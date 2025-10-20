@@ -2,8 +2,11 @@
   const { data } = $props();
 </script>
 
+<svelte:head>
+  <title>{ data.meta.title }</title>
+</svelte:head>
 <div>
-    <data.content />
+  <data.content />
 </div>
 
 <style>

@@ -10,6 +10,7 @@
 <svelte:head>
   <link rel="icon" href={favicon} />
   <meta name="description" content="blog of Kriz.." />
+  <title>BlackShores Of Kriz</title>
 </svelte:head>
 
 <div
