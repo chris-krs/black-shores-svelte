@@ -2,7 +2,7 @@
 title: 第一篇markdown2
 summary: 用来进行渲染测试
 publishAt: 2025-10-20
-thumbnail: https://owo.haruu.fun/picgo/avatar.png
+thumbnail: https://owo.haruu.fun/picgo/pic.webp
 category: markdown
 tags: ["markdown", "test"]
 ---

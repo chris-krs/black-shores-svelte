@@ -26,7 +26,7 @@
   {#each thems as { key, icon }}
     <button
       aria-label={key}
-      class="hover:bg-white rounded-full items-center py-1 px-3 transition-all duration-300"
+      class="hover:bg-white rounded-full items-center py-1 px-3"
       bg={currentTheme === key ? "white" : ""}
       onclick={() => switchTheme(key)}
     >

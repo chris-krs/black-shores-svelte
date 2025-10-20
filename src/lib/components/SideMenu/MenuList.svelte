@@ -29,7 +29,7 @@
   {#each menuItems as { href, icon, title }}
     <a
       class="hover:bg-slate-100 p-2 rounded-lg flex gap-3 items-center"
-      class:active={page.route.id === href}
+      class:active={page.url.pathname.includes(href.replace("/", ""))}
       {href}
     >
       <i class={icon}></i>
