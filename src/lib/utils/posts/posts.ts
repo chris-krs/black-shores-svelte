@@ -18,3 +18,13 @@ export const getAllPostMeta = (category: string) => {
   }
   return posts;
 };
+
+export const getPost = async (category: string, slug: string) => {
+  const post: RawPostFile = await import(
+    `../../../content/${category}/${slug}.md`
+  );
+  return {
+    content: post.default,
+    meta: post.metadata,
+  };
+};

@@ -56,7 +56,7 @@
     >
       {#each posts as post}
         <a
-          href={`/post/program/${post.slug}`}
+          href={`/posts/program/${post.slug}`}
           aria-label={post.slug}
           title={post.title}
           class="relative flex-shrink-0 w-[max(5%,clamp(13rem,20vw,13rem))] aspect-ratio-video overflow-hidden rounded-xl overflow-hidden"

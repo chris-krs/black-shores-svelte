@@ -3,6 +3,7 @@ import type { PageServerLoad } from "./$types";
 
 export const load: PageServerLoad = async () => {
   const allProgramPosts = getAllPostMeta("program");
+  console.log(allProgramPosts)
   return {
     allProgramPosts,
   };

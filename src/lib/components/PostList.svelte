@@ -12,11 +12,11 @@
       <div class="p-4 flx-col justify-center">
         <a
           href={`/posts/program/${post.slug}`}
-          class="font-bold text-lg flex items-center hover:text-blue transition-color duration-300"
+          class="group font-bold text-lg flex items-center hover:text-blue transition-color duration-300"
         >
           <div class="w-1 h-6 rounded-full mr-2 bg-blue-500"></div>
           <span class="text-xl">{post.title}</span>
-          <i class="i-iuno-right text-blue-500 w-6 h-6"></i>
+          <i class="group-hover:opacity-100 opacity-0 transition-all duration-300 i-iuno-right text-blue-500 w-6 h-6"></i>
         </a>
         <p class="mt-4 text-sm text-gray-500">{post.summary}</p>
         <div class="mt-1 flex gap-4">
