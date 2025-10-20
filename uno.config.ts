@@ -2,7 +2,9 @@ import {
   defineConfig,
   presetWind4,
   transformerVariantGroup,
+  transformerDirectives,
   presetIcons,
+  presetAttributify,
 } from "unocss";
 import { FileSystemIconLoader } from "@iconify/utils/lib/loader/node-loaders";
 
@@ -13,6 +15,7 @@ export default defineConfig({
         reset: true,
       },
     }),
+    presetAttributify(),
     presetIcons({
       collections: {
         iuno: FileSystemIconLoader("./src/lib/assets/icons", (svg) => {
@@ -21,13 +24,13 @@ export default defineConfig({
       },
     }),
   ],
-  transformers: [transformerVariantGroup()],
+  transformers: [transformerVariantGroup(), transformerDirectives()],
   rules: [
     /**
      * column flex rule
      */
-    ["flx-col", { display: "flex", "flex-direction": "column" }]
-],
+    ["flx-col", { display: "flex", "flex-direction": "column" }],
+  ],
   postprocess: (util) => {
     /**
      * normalize the icon's css style.

@@ -27,7 +27,7 @@
   {#each externalLinks as { key, icon, href }}
     <a
       {href}
-      class="rounded-full p-1 hover:(bg-slate-100 border-slate-200) border border-transparent"
+      class="rounded-full p-1 hover:(bg-slate-100 border-slate-100) border border-transparent transition-all duration-300"
       aria-label={key}
     >
       <i class={icon}></i>

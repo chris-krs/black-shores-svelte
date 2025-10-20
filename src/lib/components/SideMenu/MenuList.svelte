@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { afterNavigate } from "$app/navigation";
   import { page } from "$app/state";
 
   const menuItems = [
@@ -30,7 +29,7 @@
   {#each menuItems as { href, icon, title }}
     <a
       class="hover:bg-slate-100 p-2 rounded-lg flex gap-3 items-center"
-      class:bg-slate-100={page.route.id === href}
+      class:active={page.route.id === href}
       {href}
     >
       <i class={icon}></i>
@@ -38,3 +37,9 @@
     </a>
   {/each}
 </div>
+
+<style lang="postcss">
+  .active {
+    @apply bg-slate-100;
+  }
+</style>

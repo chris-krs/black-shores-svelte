@@ -23,6 +23,9 @@ importers:
       '@sveltejs/vite-plugin-svelte':
         specifier: ^6.2.1
         version: 6.2.1(svelte@5.41.0)(vite@7.1.10(jiti@2.6.1))
+      '@unocss/transformer-directives':
+        specifier: ^66.5.4
+        version: 66.5.4
       mdsvex:
         specifier: ^0.12.6
         version: 0.12.6(svelte@5.41.0)
