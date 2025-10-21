@@ -28,7 +28,7 @@
 <div class="flx-col gap-3 px-3">
   {#each menuItems as { href, icon, title }}
     <a
-      class="hover:(bg-[var(--bg-1)] text-[var(--text-0)]) p-2 rounded-lg flex gap-3 items-center transition-colors duration-300"
+      class="hover:(bg-[var(--bg-1)] text-[var(--text-0)] transition-colors duration-300) p-2 rounded-lg flex gap-3 items-center "
       class:active={page.url.pathname.includes(href.replace("/", ""))}
       {href}
     >
