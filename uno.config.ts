@@ -44,8 +44,8 @@ export default defineConfig({
       const width = util.entries.find((item) => item[0] === "width");
       const height = util.entries.find((item) => item[0] === "height");
       if (width && height) {
-        width[1] = "1rem";
-        height[1] = "1rem";
+        width[1] = "1em";
+        height[1] = "1em";
       }
     }
   },

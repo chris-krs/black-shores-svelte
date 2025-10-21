@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div
-  class="flex gap-8 w-full max-w-5xl w-full mx-auto px-6 relative"
+  class="flex gap-12 w-full max-w-5xl w-full mx-auto px-6 relative"
 >
   <div class="hidden md:block h-[100vh] sticky top-0">
     <SideMenu />

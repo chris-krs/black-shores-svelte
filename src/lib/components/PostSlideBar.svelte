@@ -59,12 +59,12 @@
           href={`/posts/program/${post.slug}`}
           aria-label={post.slug}
           title={post.title}
-          class="relative flex-shrink-0 w-[max(5%,clamp(13rem,20vw,13rem))] aspect-ratio-video overflow-hidden rounded-xl overflow-hidden"
+          class="relative flex-shrink-0 max-w-[13rem] aspect-ratio-video overflow-hidden rounded-xl overflow-hidden"
         >
           <img
             src={post.thumbnail}
             alt={`thumbnail of ${post.title}`}
-            class="w-64 h-full object-cover"
+            class="object-cover"
             fetchpriority="high"
           />
           <div
@@ -94,5 +94,3 @@
   {/if}
 </div>
 
-<style>
-</style>

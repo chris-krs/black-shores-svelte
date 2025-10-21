@@ -15,8 +15,10 @@ tags: ["markdown", "test"]
 
 这是一个`二级标题`测试一下**大小**
 
-```js
-const a = 123;
+```python
+flag = False
+if flag:
+    flag = True
 ```
 
 > 引用鲁迅的一句话
