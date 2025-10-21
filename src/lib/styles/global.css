@@ -16,6 +16,7 @@
   --border: hsl(220deg 10% 20%);
   color-scheme: dark;
 }
+
 html,
 body {
   color: var(--text-1);

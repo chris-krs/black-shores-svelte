@@ -8,7 +8,7 @@ import { createHighlighter } from "shiki";
 import { bundledLanguagesInfo } from "shiki/langs";
 
 const highlighter = await createHighlighter({
-  themes: ["dracula"],
+  themes: ["github-light", "github-dark"],
   lang: bundledLanguagesInfo.map((lang) => lang.id),
 });
 
@@ -42,8 +42,8 @@ const config = {
                   type: "element",
                   tagName: "i",
                   properties: {
-                    class: "i-iuno-paperclip"
-                  }
+                    class: "i-iuno-paperclip",
+                  },
                 },
               ],
             },
@@ -54,7 +54,13 @@ const config = {
         highlighter: async (code, lang = "text") => {
           await highlighter.loadLanguage(lang);
           const html = escapeSvelte(
-            highlighter.codeToHtml(code, { lang, theme: "dracula" })
+            highlighter.codeToHtml(code, {
+              lang,
+              themes: {
+                light: "github-light",
+                dark: "github-dark",
+              },
+            })
           );
           const classAndStylePattern =
             /<pre\s+class="([^"]+)"\s+style="([^"]+)"/;

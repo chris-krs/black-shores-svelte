@@ -45,35 +45,20 @@
       opacity: 0;
       transition: all 300ms;
     }
-    /* :global(.anchor-link) {
-      display: flex;
-      align-items: center;
-    }
-    :global(.anchor-link):hover {
-      color: rgb(100, 108, 255);
-      
-    }
-    :global(.anchor-icon) {
-      font-size: calc(1em * 0.8);
-      opacity: 0;
-      transition: opacity 300ms;
-      margin-left: 1rem;
-    }
-    :global(.anchor-link:hover .anchor-icon) {
-      opacity: 1;
-    } */
+
     /* highlight */
     :global(code:not(pre code)) {
       background-color: rgba(100, 108, 255, 0.14);
       color: rgb(100, 108, 255);
       @apply px-2 py-[0.2rem] rounded-sm mx-2 text-sm;
     }
-    /* code block */
+    /* blockquote */
     :global(blockquote) {
       border-left: 0.4rem solid rgba(100, 108, 255);
       padding-left: 1rem;
       @apply my-4;
     }
+    
     /* list */
     :global(ul, ol) {
       padding-left: 1.5rem;
