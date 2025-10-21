@@ -7,7 +7,7 @@
 <div class="flx-col gap-4">
   {#each posts as post}
     <div
-      class="flex justify-between h-36 overflow-hidden rounded-xl shadow-[0_.1em_.2em_hsl(220deg_20%_20%/10%)] bg-white"
+      class="flex justify-between h-36 overflow-hidden rounded-xl shadow-[0_.1em_.2em_hsl(220deg_20%_20%/10%)] bg-[var(--bg-3)]"
     >
       <div class="p-4 flx-col justify-center">
         <a

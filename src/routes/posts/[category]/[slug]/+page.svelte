@@ -12,9 +12,9 @@
     <img
       src={data.meta.thumbnail}
       alt={data.meta.title}
-      class="group-hover:scale-110 absolute top-0 left-0 h-64 w-full object-cover -z-10 transition-all duration-300"
+      class="group-hover:scale-110 absolute top-0 left-0 h-64 w-full object-cover z-1 transition-all duration-300"
     />
-    <div class="flex gap-2 p-4 meta">
+    <div class="flex gap-2 p-4 meta z-2">
       <div
         class="rounded-lg border border-[hsla(0,0%,100%,.5)] px-2 flex items-center gap-2 shadow-2xs"
       >
@@ -28,7 +28,7 @@
         {data.meta.category}
       </div>
     </div>
-    <div class="post-title text-3xl font-bold">
+    <div class="post-title text-3xl font-bold z-2">
       {data.meta.title}
     </div>
   </div>

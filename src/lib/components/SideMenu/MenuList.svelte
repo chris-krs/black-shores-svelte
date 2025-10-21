@@ -28,7 +28,7 @@
 <div class="flx-col gap-3 px-3">
   {#each menuItems as { href, icon, title }}
     <a
-      class="hover:bg-slate-100 p-2 rounded-lg flex gap-3 items-center"
+      class="hover:(bg-[var(--bg-1)] text-[var(--text-0)]) p-2 rounded-lg flex gap-3 items-center transition-colors duration-300"
       class:active={page.url.pathname.includes(href.replace("/", ""))}
       {href}
     >
@@ -40,6 +40,7 @@
 
 <style lang="postcss">
   .active {
-    @apply bg-slate-100;
+    background-color: var(--bg-1);
+    color: var(--text-0);
   }
 </style>

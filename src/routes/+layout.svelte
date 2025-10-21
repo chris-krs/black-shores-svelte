@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div
-  class="flex gap-12 w-full max-w-5xl w-full mx-auto px-6 relative"
+  class="flex gap-8 w-full max-w-5xl w-full mx-auto px-6 relative"
 >
   <div class="hidden md:block h-[100vh] sticky top-0">
     <SideMenu />
@@ -24,7 +24,7 @@
       {@render children?.()}
     </div>
     <footer
-      class="mt-16 pt-10 border-t-slate-200 border-t border-dashed text-sm text-gray-500 flx-col gap-2 items-center justify-center"
+      class="mt-16 pt-10 border-t-[var(--border)] border-t border-dashed text-sm text-gray-500 flx-col gap-2 items-center justify-center"
     >
       <div>&copy;All rights reserverd by Kriz</div>
       <div>CC BY-NC-SA 4.0</div>
